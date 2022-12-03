@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+int main(){
+int n1,n2,div;
+  //division of teo Numbers
+  cout<<"please enter first number"<<endl;
+  cin>>n1;
+  cout<<"please enter the second number"<<endl;
+  cin>>n2;
+  div=n1/n2;
+  cout<<"division="<<div;
+  return 0;
+}
