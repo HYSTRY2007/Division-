@@ -1,0 +1,39 @@
+import  java.util.Scanner;
+public class gtn
+{
+    public void g()
+    {
+        Scanner game=new Scanner(System.in);
+        System.out.println("WELCOME TO 'GUESS THE NUMBER' GAME");
+        System.out.println("press enter to continue");
+        System.out.println("");
+        String ch=game.nextLine();
+        System.out.println("What is your name?");
+        String name=game.nextLine();
+        System.out.println("");
+        System.out.println("ok");
+         System.out.println("press enter to continue");
+        String ch2=game.nextLine();
+        System.out.println("RULE-1:TRY TO GUESS THE NUMBER BETWEEN 1 TO 2O");
+        System.out.println("RULE 2:YOU HAVE ONLY 20 CHANCES");
+        System.out.println("GUESS NOW--ENTER NUMBER");
+        int max=20,min=1,n;
+        int range=max-min+1;
+        
+        for(int i=1;i<=20;i++){
+            n=game.nextInt();
+            int ra=(int)(Math.random()*range+min);
+            if(n==ra)
+            {
+                System.out.println("YOU WON"+""+name+"!");
+                System.exit(0);
+            }
+            else
+            {
+              System.out.print("Try again......"+n+""+"is not correct anwser."+"correct answer was"+"");  
+              System.out.println(ra);
+            }    
+        }
+        System.out.print("YOU LOSE");
+    }
+}
